@@ -10,7 +10,7 @@ export default function UnityComponent({ build }) {
   });
 
   return (
-    <div className="w-7xl aspect-[16/9]">
+    <div className="w-full aspect-[16/9]">
         <Unity
             unityProvider={unityProvider} className="w-full aspect-[16/9]"
         />

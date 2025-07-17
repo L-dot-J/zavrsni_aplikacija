@@ -4,24 +4,24 @@ import { cardsData } from '../data/educationalData';
 import Footer from '../components/Footer';
 import Unity from '../components/Unity';
 
-// Tailwind mapping for block types
+
 function renderContentBlock(block, idx) {
   switch (block.type) {
     case 'callout':
       return (
-        <div key={idx} className="bg-gradient-to-r from-blue-900 to-blue-700 text-yellow-300 p-5 rounded-xl font-semibold shadow mb-6">
+        <div key={idx} className="bg-gradient-to-r from-[rgba(118,172,204,0.3)] to-[rgba(53,95,197,0.3)]  text-[#f5cfc5] bg-opacity-10 p-5 rounded-xl font-semibold mb-6">
           {block.value}
         </div>
       );
     case 'heading':
       return (
-        <h2 key={idx} className="text-yellow-300 text-2xl font-bold mt-8 mb-4">
+        <h2 key={idx} className="text-zinc-300 text-2xl font-bold mt-8 mb-4">
           {block.value}
         </h2>
       );
     case 'list':
       return (
-        <ul key={idx} className="ml-6 text-lg leading-relaxed list-disc mb-4">
+        <ul key={idx} className="ml-6 text-lg leading-relaxed list-disc mb-4 text-zinc-300">
           {block.value.map((item, i) => (
             <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
           ))}
@@ -29,31 +29,49 @@ function renderContentBlock(block, idx) {
       );
     case 'fact':
       return (
-        <div key={idx} className="bg-neutral-900 border-l-4 border-yellow-300 p-4 rounded-lg my-4 text-base">
+        <div key={idx} className="bg-[rgba(245,207,197,0.3)] border-l-8 border-[#f5cfc5] p-4 rounded-lg my-4 text-base text-zinc-300">
           {block.value}
         </div>
       );
     case 'paragraph':
       return (
-        <div key={idx} className="text-base text-neutral-200 mb-2">
+        <div key={idx} className=" text-zinc-300 mb-2 text-lg">
           {block.value}
         </div>
       );
     case 'image':
       return (
-        <img key={idx} src={block.value} alt={block.alt} className="w-full rounded-xl shadow my-6" />
+        <img key={idx} src={block.value} alt={block.alt} className="w-11/12 rounded-xl my-6" />
       );
     case 'image_small':
       return (
-        <img key={idx} src={block.value} alt={block.alt} className="w-32 mx-auto my-4 rounded-lg shadow" />
+        <img key={idx} src={block.value} alt={block.alt} className="w-8/12 mx-auto my-4 rounded-lg" />
       );
     case 'unity':
       return <Unity key={idx} build={block.build} />;
-    case 'q&a':
+    case 'unity_intro':
       return (
-        <div key={idx} className="bg-blue-900/80 text-yellow-300 font-semibold rounded-xl px-4 py-3 my-3 shadow flex items-center gap-2">
-          <span className="text-xl">💡</span> <span dangerouslySetInnerHTML={{ __html: block.value }} />
+        <div key={idx} className="bg-zinc-950  text-zinc-500 bg-opacity-10 p-2 font-sans  mt-6 mb-0">
+          {block.value}
         </div>
+      );
+    case 'q':
+      return (
+           <div key={idx} className="group bg-slate-950 text-red-400 font-semibold rounded-lg p-1 my-2 shadow flex items-center justify-center cursor-default ml-auto transition-all duration-200 ease-out w-12 h-12 hover:h-auto hover:w-auto hover:px-3 hover:py-2 overflow-hidden">
+      <span className="text-2xl transition-opacity duration-200 ease-out group-hover:opacity-0 absolute">❓</span>
+      <span className="opacity-0 transition-opacity duration-200 ease-out group-hover:opacity-100 pl-2 wrap-normal">
+        {block.value.replace('❓', '')}
+      </span>
+    </div>
+      );
+      case 'a':
+      return (
+           <div key={idx} className="group bg-slate-950 text-green-400 font-semibold rounded-lg p-1 my-2 shadow flex items-center justify-center cursor-default ml-auto transition-all duration-200 ease-out w-12 h-12  hover:h-auto hover:w-auto hover:px-3 hover:py-2 overflow-hidden">
+      <span className="text-2xl transition-opacity duration-200 ease-out group-hover:opacity-0 absolute">✅</span>
+      <span className="opacity-0 transition-opacity duration-200 ease-out group-hover:opacity-100 pl-2 wrap-normal">
+        {block.value.replace('✅ ', '')}
+      </span>
+    </div>
       );
     default:
       return null;
