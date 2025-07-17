@@ -40,7 +40,7 @@ export default function Sidebar({ collapsed, setCollapsed }) {
         </ul>
       </nav>
       
-      <label class="flex flex-col justify-center items-center  cursor-pointer">
+      {/* <label class="flex flex-col justify-center items-center  cursor-pointer">
         <input type="checkbox" value="" class="sr-only peer"/>
         <span class=" text-sm font-medium mb-1 text-zinc-300">Tema</span>
         <div class="relative w-11 h-6 bg-zinc-400 
@@ -57,7 +57,7 @@ export default function Sidebar({ collapsed, setCollapsed }) {
             peer-checked:bg-slate-950 dark:peer-checked:bg-slate-600 mb-4">
          </div>
         
-      </label>
+      </label> */}
 
       <div className={`flex justify-center px-2 mb-15 text-2xl text-zinc-300 border-t border-slate-700 ${collapsed ? 'gap-2' : 'gap-5'}`}>
         <FaFacebook className="cursor-pointer mt-4 hover:text-slate-700 transition" />

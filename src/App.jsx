@@ -7,7 +7,7 @@ import EducationalDetail from './pages/EducationalDetail';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/zavrsni_aplikacija'>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
