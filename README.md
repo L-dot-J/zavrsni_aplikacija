@@ -5,12 +5,12 @@ Dobrodošli! Ovo je repozitorij mog završnog projekta.
 ## 📁 Izvorni kod i resursi
 
 Cjelokupan izvorni kod i svi pripadajući resursi dostupni su na GitHub-u:  
-🔗 [https://github.com/L-dot-J/zavrsni_aplikacija]
+🔗 https://github.com/L-dot-J/zavrsni_aplikacija
 
 ## 🌐 Pokretanje projekta preko linka
 
 Pregled gotovog projekta dostupan je na linku :
-🔗 [https://l-dot-j.github.io/zavrsni_aplikacija/]
+🔗 https://l-dot-j.github.io/zavrsni_aplikacija/
 
 ## 🖥️ Pokretanje projekta lokalno
 
