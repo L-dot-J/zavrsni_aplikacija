@@ -99,7 +99,7 @@ export const cardsData = [
         '<b>Kohenzivne sile:</b> Djeluju među molekulama unutar fluida. Ove sile utječu na ponašanje fluida u malim cijevima i kapilarama.',
         '<b>Adhezivne sile:</b> Djeluju između molekula fluida i druge površine (npr. stakla), što je vidljivo u kapilarnom usponu.'
       ] },
-      { type: 'unity_intro', value: 'Upute: Podešavanje gustoće: Povlačenjem klizača mijenjajte gustoću lignje i okolnog fluida. Ovisno o omjeru gustoća, lignja će: potonuti ako je gušća od fluida, stajati na mjestu ako je pri neutralnoj gustoći, isploviti ako je rjeđa od fluida.' },
+      { type: 'unity_intro', value: 'Upute: Podešavanje gustoće: Povlačenjem klizača mijenjajte gustoću lignje i okolnog fluida. Ovisno o omjeru gustoća, lignja će: potonuti ako je gušća od fluida, stajati na mjestu ako je pri neutralnoj gustoći, isploviti ako je rjeđa od fluida (da se radi o neživom objektu on bih potonuo do dna čim bih gustoća objekta bila veća od gustoće fluida).' },
       { type: 'unity', build: 'Build4' },
       { type: 'fact', value: 'ZANIMLJIVOST: Lignje postižu uzgon kombinacijom metoda: Pohranjuju tekućine niske gustoće (npr. amonijak) u specijaliziranim tkivima, koriste mlazni pogon za vertikalno kretanje, vrste iz porodice Cranchiidae pohranjuju amonijak u posebnim šupljinama, dok ga druge vrste drže u vakuolama mišićnog tkiva. Amonijak (nusproizvod prehrane) pomaže im postići neutralni uzgon.' },
       { type: 'heading', value: 'Tekućine vs. Plinovi' },
