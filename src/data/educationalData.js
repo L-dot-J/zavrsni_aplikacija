@@ -234,7 +234,7 @@ export const cardsData = [
       { type: 'fact', value: 'ZANIMLJIVOST: Otkriće zakona potencijalno se dogodilo tijekom Arhimedove kupke, a princip se koristi i za otkrivanje prijevare (provjera autentičnosti zlatnika, nakita i dragulja) te za izračunavanje volumena objekta koji nema pravilan oblik.' },
       { type: 'heading', value: 'Praktična primjena Arhimedovog zakona' },
       { type: 'paragraph', value: 'Zakon se koristi za dizajn brodova, podmornica, mjerenje gustoće nepoznatih materijala i razumijevanje plovnosti tijela. Inženjeri, fizičari i znanstvenici oslanjaju se na Arhimedov zakon pri izradi mnogih uređaja i konstrukcija koje dolaze u dodir s fluidima.' },
-      { type: 'unity_intro', value: 'Upute: Mijenjajte volumen kocke po x, y i z osi, a s time i masu. Promatrajte kako se iznaosi mijenjaju.' },
+      { type: 'unity_intro', value: 'Upute: Mijenjajte volumen kocke po x, y i z osi, a s time i masu. Promatrajte kako se iznosi mijenjaju dok pomičete objekt pritiskom lijeve tipke na mišu.' },
       { type: 'unity', build: 'Build3' },
       { type: 'heading', value: 'Stvarni primjeri primjene' },
       { type: 'list', value: [
