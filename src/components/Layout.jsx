@@ -9,7 +9,7 @@ export default function Layout() {
   const sidebarWidth = collapsed ? '5rem' : '16rem';
 
   return (
-    <div className="flex min-h-screen w-screen">
+    <div className="flex min-h-screen w-full">
       <Sidebar collapsed={collapsed} setCollapsed={setCollapsed} />
       
       <main
