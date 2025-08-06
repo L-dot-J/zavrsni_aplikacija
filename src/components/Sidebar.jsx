@@ -59,7 +59,7 @@ export default function Sidebar({ collapsed, setCollapsed }) {
         
       </label> */}
 
-      <div className={`flex justify-center px-2 mb-15 text-2xl text-zinc-300 border-t border-slate-700 ${collapsed ? 'gap-2' : 'gap-5'}`}>
+      <div className={`flex justify-center px-2 mb-22 md:mb-15 text-2xl text-zinc-300 border-t border-slate-700 ${collapsed ? 'gap-2' : 'gap-5'}`}>
         <FaFacebook className="cursor-pointer mt-4 hover:text-slate-700 transition" />
         <FaInstagram className="cursor-pointer mt-4 hover:text-slate-700 transition" />
         <FaMailBulk className="cursor-pointer mt-4 hover:text-slate-700 transition" />
